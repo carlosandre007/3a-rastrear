@@ -1,0 +1,20 @@
+{
+    "short_name": "3A Rastrear",
+    "name": "3A Rastrear - Monitoramento Inteligente",
+    "icons": [
+        {
+            "src": "icon-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "icon-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#0A2540",
+    "background_color": "#ffffff"
+}
