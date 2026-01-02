@@ -8,7 +8,7 @@ interface NavbarProps {
 export const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [showPriceTip, setShowPriceTip] = useState(false);
-  const logoUrl = "https://lh3.googleusercontent.com/aida-public/AB6AXuB3c9XLkXIrg4LNCSrHr00bitaHtGJaM40fH0iKNEQaSFg1qHxyPe6mgIqPpcuaD67syJe0QP0aGuGcj07u7WUnp301nbb8lMfcVMM9mfpVWmrWOgcGD7oErH3Vz8bLZFsCenGGG-5kszQqwXfV-2G8REVQz-zrW5Jcv9Ki2Sm11nkaPQR9gIr0W6DZB9nSIp8eZ-LhSyrP021cR8FsEgf-ZtJE2Kl68nyJeN-fOTVUsLaP_Tm2XbEpjetGwWhbljHZbVMlCpduvKp3";
+  const logoUrl = "/logo-final.jpg";
 
   const handlePlanosClick = () => {
     setShowPriceTip(true);
@@ -20,9 +20,9 @@ export const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         <div className="flex items-center gap-3">
           <div className="h-14 w-auto bg-white rounded-xl flex items-center justify-center p-1 shadow-md border border-slate-100 overflow-hidden">
-            <img 
-              src={logoUrl} 
-              alt="3A Rastrear Logo" 
+            <img
+              src={logoUrl}
+              alt="3A Rastrear Logo"
               className="h-full w-full object-contain scale-110"
             />
           </div>
@@ -41,8 +41,8 @@ export const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
           <a href="#" className={`font-bold text-sm hover:text-primary transition-colors ${isScrolled ? 'text-secondary' : 'text-white'}`}>Home</a>
           <a href="#" className={`font-bold text-sm hover:text-primary transition-colors ${isScrolled ? 'text-secondary' : 'text-white'}`}>Funcionalidades</a>
           <a href="#" className={`font-bold text-sm hover:text-primary transition-colors ${isScrolled ? 'text-secondary' : 'text-white'}`}>Frota</a>
-          
-          <button 
+
+          <button
             onClick={handlePlanosClick}
             className={`relative font-bold text-sm hover:text-primary transition-colors flex flex-col items-center ${isScrolled ? 'text-secondary' : 'text-white'}`}
           >
@@ -56,8 +56,8 @@ export const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
           </button>
 
           {/* Persistent WhatsApp in Navbar */}
-          <a 
-            href="https://wa.me/5581985938044" 
+          <a
+            href="https://wa.me/5581985938044"
             className={`hidden lg:flex items-center gap-2 border-l pl-8 ml-2 ${isScrolled ? 'border-slate-200 text-secondary' : 'border-white/20 text-white'}`}
           >
             <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA" className="w-5 h-5" />
@@ -81,8 +81,8 @@ export const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
           <a href="#" className="font-bold text-secondary py-2 border-b border-slate-50">Home</a>
           <a href="#" className="font-bold text-secondary py-2 border-b border-slate-50">Funcionalidades</a>
           <a href="#" className="font-bold text-secondary py-2 border-b border-slate-50">Frota</a>
-          
-          <button 
+
+          <button
             onClick={handlePlanosClick}
             className="flex flex-col items-start gap-1 py-2 border-b border-slate-50"
           >
@@ -95,8 +95,8 @@ export const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
           </button>
 
           <button className="w-full bg-secondary text-white py-4 rounded-xl font-bold mt-2">Acessar Plataforma</button>
-          <a 
-            href="https://wa.me/5581985938044" 
+          <a
+            href="https://wa.me/5581985938044"
             className="w-full bg-primary text-secondary py-4 rounded-xl font-bold flex items-center justify-center gap-2"
           >
             <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA" className="w-6 h-6" />

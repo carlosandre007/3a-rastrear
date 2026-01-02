@@ -3,13 +3,13 @@
     "name": "3A Rastrear - Monitoramento Inteligente",
     "icons": [
         {
-            "src": "icon-192.png",
-            "type": "image/png",
+            "src": "logo-final.jpg",
+            "type": "image/jpeg",
             "sizes": "192x192"
         },
         {
-            "src": "icon-512.png",
-            "type": "image/png",
+            "src": "logo-final.jpg",
+            "type": "image/jpeg",
             "sizes": "512x512"
         }
     ],

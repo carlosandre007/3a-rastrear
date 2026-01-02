@@ -2,7 +2,7 @@
 import React from 'react';
 
 export const Footer: React.FC = () => {
-  const logoUrl = "https://lh3.googleusercontent.com/aida-public/AB6AXuB3c9XLkXIrg4LNCSrHr00bitaHtGJaM40fH0iKNEQaSFg1qHxyPe6mgIqPpcuaD67syJe0QP0aGuGcj07u7WUnp301nbb8lMfcVMM9mfpVWmrWOgcGD7oErH3Vz8bLZFsCenGGG-5kszQqwXfV-2G8REVQz-zrW5Jcv9Ki2Sm11nkaPQR9gIr0W6DZB9nSIp8eZ-LhSyrP021cR8FsEgf-ZtJE2Kl68nyJeN-fOTVUsLaP_Tm2XbEpjetGwWhbljHZbVMlCpduvKp3";
+  const logoUrl = "/logo-final.jpg";
 
   return (
     <footer className="bg-slate-950 pt-20 pb-10 px-6 border-t border-white/5">
@@ -10,8 +10,8 @@ export const Footer: React.FC = () => {
         <div className="col-span-1 md:col-span-1">
           <div className="flex items-center gap-3 mb-6">
             <div className="w-16 h-16 bg-white rounded-xl flex items-center justify-center p-2 shadow-lg border border-slate-800">
-              <img 
-                src={logoUrl} 
+              <img
+                src={logoUrl}
                 className="w-full h-full object-contain scale-110"
                 alt="3A Rastrear"
               />
@@ -50,10 +50,10 @@ export const Footer: React.FC = () => {
           <h4 className="text-white font-bold mb-6 text-sm uppercase tracking-wider">Atendimento</h4>
           <div className="space-y-4">
             <p className="text-slate-400 text-sm font-medium">Comercial e Suporte Técnico:</p>
-            <a 
-              href="https://wa.me/5581985938044" 
-              target="_blank" 
-              rel="noopener noreferrer" 
+            <a
+              href="https://wa.me/5581985938044"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-white text-2xl font-black block hover:text-primary transition-colors"
             >
               81 98593-8044

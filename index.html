@@ -1,26 +1,27 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3A Rastrear - Monitoramento Inteligente</title>
-    <link rel="icon" type="image/png" href="https://lh3.googleusercontent.com/aida-public/AB6AXuB3c9XLkXIrg4LNCSrHr00bitaHtGJaM40fH0iKNEQaSFg1qHxyPe6mgIqPpcuaD67syJe0QP0aGuGcj07u7WUnp301nbb8lMfcVMM9mfpVWmrWOgcGD7oErH3Vz8bLZFsCenGGG-5kszQqwXfV-2G8REVQz-zrW5Jcv9Ki2Sm11nkaPQR9gIr0W6DZB9nSIp8eZ-LhSyrP021cR8FsEgf-ZtJE2Kl68nyJeN-fOTVUsLaP_Tm2XbEpjetGwWhbljHZbVMlCpduvKp3" />
+    <link rel="icon" type="image/jpeg" href="/logo-final.jpg" />
     <link rel="manifest" href="/manifest.json" />
     <meta name="theme-color" content="#0A2540" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="apple-mobile-web-app-title" content="3A Rastrear" />
-    <link rel="apple-touch-icon" href="/icon-192.png" />
+    <link rel="apple-touch-icon" href="/logo-final.jpg" />
 
-    
+
     <!-- Fonts & Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" />
-    
+
     <!-- Framework -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <script>
         tailwind.config = {
             theme: {
@@ -40,16 +41,39 @@
     </script>
 
     <style>
-        body { font-family: 'Montserrat', sans-serif; scroll-behavior: smooth; }
-        .glass { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
-        .glass-dark { background: rgba(10, 37, 64, 0.8); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.05); }
-        
-        @keyframes fade-in-up {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
         }
-        .animate-fade-in-up { animation: fade-in-up 0.5s ease-out forwards; }
-        
+
+        .glass {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .glass-dark {
+            background: rgba(10, 37, 64, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        @keyframes fade-in-up {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-in-up {
+            animation: fade-in-up 0.5s ease-out forwards;
+        }
+
         .map-grid {
             background-image: radial-gradient(circle, #ffffff 1px, transparent 1px);
             background-size: 40px 40px;
@@ -58,12 +82,13 @@
         .price-tip {
             display: none;
         }
+
         .price-tip.active {
             display: block;
             animation: bounce 1s infinite;
         }
     </style>
-<script type="importmap">
+    <script type="importmap">
 {
   "imports": {
     "react": "https://esm.sh/react@^19.2.3",
@@ -73,20 +98,22 @@
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/index.css">
 </head>
+
 <body class="bg-slate-50 overflow-x-hidden">
     <!-- Ponto de entrada para a aplicação React -->
     <div id="root"></div>
-<script type="module" src="/index.tsx"></script>
-<script>
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-      navigator.serviceWorker.register('/sw.js')
-        .then(reg => console.log('Service Worker registrado!', reg))
-        .catch(err => console.log('Falha ao registrar Service Worker:', err));
-    });
-  }
-</script>
+    <script type="module" src="/index.tsx"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(reg => console.log('Service Worker registrado!', reg))
+                    .catch(err => console.log('Falha ao registrar Service Worker:', err));
+            });
+        }
+    </script>
 </body>
+
 </html>
