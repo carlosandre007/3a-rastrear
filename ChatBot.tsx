@@ -5,7 +5,7 @@ import { GoogleGenAI } from "@google/genai";
 export const ChatBot: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<{ role: 'user' | 'bot', text: string }[]>([
-    { role: 'bot', text: 'Olá! Sou o assistente inteligente da 3A Rastrear. Como posso ajudar você a proteger seu veículo hoje?' }
+    { role: 'bot', text: 'Olá! Sou o assistente inteligente da 3A RASTREAR. Como posso ajudar você a proteger seu veículo hoje?' }
   ]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -33,7 +33,7 @@ export const ChatBot: React.FC = () => {
         contents: userMsg,
         config: {
           systemInstruction: `
-            Você é o assistente virtual da 3A Rastrear, uma empresa de rastreamento veicular brasileira. 
+            Você é o assistente virtual da 3A RASTREAR, uma empresa de rastreamento veicular brasileira. 
             Seu tom deve ser profissional, tecnológico e prestativo.
             Serviços da empresa: Rastreamento em tempo real, bloqueio remoto, histórico de rotas, cerca eletrônica, monitoramento 24h.
             Preços: Peça para o cliente entrar em contato com o comercial no número 81 98593-8044 para cotação personalizada.
@@ -55,7 +55,7 @@ export const ChatBot: React.FC = () => {
 
   return (
     <>
-      <button 
+      <button
         onClick={() => setIsOpen(!isOpen)}
         className="fixed bottom-24 right-6 w-14 h-14 bg-secondary text-white rounded-full flex items-center justify-center shadow-xl hover:scale-110 transition-transform z-40 border-2 border-primary"
       >
@@ -80,9 +80,8 @@ export const ChatBot: React.FC = () => {
           <div ref={chatRef} className="flex-1 overflow-y-auto p-4 space-y-4 bg-slate-50">
             {messages.map((msg, i) => (
               <div key={i} className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
-                <div className={`max-w-[80%] p-3 rounded-2xl text-sm font-medium shadow-sm ${
-                  msg.role === 'user' ? 'bg-primary text-secondary rounded-tr-none' : 'bg-white text-slate-700 rounded-tl-none'
-                }`}>
+                <div className={`max-w-[80%] p-3 rounded-2xl text-sm font-medium shadow-sm ${msg.role === 'user' ? 'bg-primary text-secondary rounded-tr-none' : 'bg-white text-slate-700 rounded-tl-none'
+                  }`}>
                   {msg.text}
                 </div>
               </div>
@@ -99,15 +98,15 @@ export const ChatBot: React.FC = () => {
           </div>
 
           <div className="p-4 bg-white border-t border-slate-100 flex gap-2">
-            <input 
-              type="text" 
+            <input
+              type="text"
               value={input}
               onChange={(e) => setInput(e.target.value)}
               onKeyPress={(e) => e.key === 'Enter' && handleSend()}
               placeholder="Digite sua dúvida..."
               className="flex-1 bg-slate-100 border-none rounded-xl px-4 text-sm focus:ring-2 focus:ring-primary"
             />
-            <button 
+            <button
               onClick={handleSend}
               className="w-10 h-10 bg-secondary text-white rounded-xl flex items-center justify-center hover:bg-slate-900 transition-colors"
             >

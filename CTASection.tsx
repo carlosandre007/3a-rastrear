@@ -11,15 +11,15 @@ export const CTASection: React.FC = () => {
         <div className="relative z-10">
           <h2 className="text-3xl md:text-5xl font-black text-white mb-6">Proteja seu veículo agora mesmo</h2>
           <p className="text-slate-300 max-w-2xl mx-auto mb-10 text-lg">
-            Junte-se a milhares de clientes que confiam na 3A Rastrear para proteger o que mais importa.
+            Junte-se a milhares de clientes que confiam na 3A RASTREAR para proteger o que mais importa.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <button className="w-full sm:w-auto px-12 py-5 bg-primary text-secondary font-black text-xl rounded-2xl shadow-2xl shadow-primary/30 hover:scale-105 active:scale-95 transition-all">
               Contratar Rastreamento
             </button>
-            <a 
-              href="https://wa.me/5581985938044" 
+            <a
+              href="https://wa.me/5581985938044"
               className="w-full sm:w-auto px-12 py-5 bg-transparent border-2 border-emerald-500 text-emerald-500 font-bold text-xl rounded-2xl flex items-center justify-center gap-3 hover:bg-emerald-500/10 transition-colors"
             >
               <span className="material-icons-round">whatsapp</span>

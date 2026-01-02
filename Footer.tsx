@@ -13,7 +13,7 @@ export const Footer: React.FC = () => {
               <img
                 src={logoUrl}
                 className="w-full h-full object-contain scale-110"
-                alt="3A Rastrear"
+                alt="3A RASTREAR"
               />
             </div>
             <div className="flex flex-col">
@@ -71,7 +71,7 @@ export const Footer: React.FC = () => {
       </div>
 
       <div className="max-w-7xl mx-auto pt-10 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4 text-slate-500 text-xs font-bold">
-        <p>© 2024 3A Rastreamento Veicular. Todos os direitos reservados.</p>
+        <p>© 2026 3A RASTREAR. Todos os direitos reservados.</p>
         <p>Desenvolvido com tecnologia de ponta para sua segurança.</p>
       </div>
     </footer>

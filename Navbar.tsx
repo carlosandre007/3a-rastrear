@@ -26,7 +26,7 @@ export const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
               className="h-full w-full object-contain scale-110"
             />
           </div>
-          <div className="hidden lg:flex flex-col">
+          <div className="flex flex-col">
             <span className={`text-xl font-black tracking-tighter leading-none ${isScrolled ? 'text-secondary' : 'text-white'}`}>
               3A <span className="text-primary">RASTREAR</span>
             </span>
