@@ -31,17 +31,20 @@ export const Hero: React.FC = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <button
-            onClick={() => alert("A Área do Cliente está em atualização e estará disponível em breve.")}
-            className="w-full sm:w-auto px-10 py-5 bg-primary hover:bg-yellow-500 text-secondary font-extrabold text-lg rounded-2xl shadow-2xl shadow-primary/20 transition-all hover:-translate-y-1 active:scale-95 flex items-center justify-center gap-3 text-center"
+          <a
+            href="/#contato"
+            className="w-full sm:w-auto px-12 py-5 bg-gradient-to-r from-amber-400 to-yellow-500 hover:from-amber-500 hover:to-yellow-600 text-secondary font-black text-xl rounded-2xl shadow-[0_15px_35px_rgba(251,191,36,0.35)] transition-all hover:-translate-y-1 active:scale-95 flex items-center justify-center gap-3 text-center border-2 border-white/20"
           >
-            <span className="material-icons-round">login</span>
-            Acessar Plataforma (Em breve)
-          </button>
-          <button className="w-full sm:w-auto px-10 py-5 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 text-white font-bold text-lg rounded-2xl transition-all flex items-center justify-center gap-3">
+            <span className="material-icons-round text-2xl animate-bounce">calendar_today</span>
+            AGENDAR INSTALAÇÃO AGORA
+          </a>
+          <a
+            href="/#contato"
+            className="w-full sm:w-auto px-10 py-5 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 text-white font-bold text-lg rounded-2xl transition-all flex items-center justify-center gap-3"
+          >
             <span className="material-icons-round text-primary">play_circle_filled</span>
             Solicitar Demonstração
-          </button>
+          </a>
         </div>
 
         {/* Stats Row */}
