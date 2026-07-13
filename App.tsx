@@ -6,6 +6,14 @@ import { ClienteArea } from './ClienteArea';
 import { AdminArea } from './AdminArea';
 import { ResponsiveWrapper } from './src/components/ResponsiveWrapper';
 
+// Páginas de Conformidade e Contato
+import { PoliticaPrivacidade } from './src/components/compliance/PoliticaPrivacidade';
+import { PoliticaCookies } from './src/components/compliance/PoliticaCookies';
+import { TermosUso } from './src/components/compliance/TermosUso';
+import { PoliticaRastreamento } from './src/components/compliance/PoliticaRastreamento';
+import { Contato } from './src/components/compliance/Contato';
+import { CookieBanner } from './src/components/compliance/CookieBanner';
+
 const DashboardRedirect: React.FC = () => {
   const { navigate } = useRouter();
   useEffect(() => {
@@ -33,7 +41,7 @@ const App: React.FC = () => {
     <ResponsiveWrapper>
       <RouterProvider>
         {/* Rota raiz "/" exibe a Landing Page */}
-        <Route path="/">
+        <Route path="/" exact>
           <SiteArea />
         </Route>
 
@@ -71,6 +79,30 @@ const App: React.FC = () => {
         <Route path="/dashboard">
           <DashboardRedirect />
         </Route>
+
+        {/* Rotas de Conformidade e Contato */}
+        <Route path="/politica-privacidade">
+          <PoliticaPrivacidade />
+        </Route>
+
+        <Route path="/politica-cookies">
+          <PoliticaCookies />
+        </Route>
+
+        <Route path="/termos-uso">
+          <TermosUso />
+        </Route>
+
+        <Route path="/politica-rastreamento">
+          <PoliticaRastreamento />
+        </Route>
+
+        <Route path="/contato">
+          <Contato />
+        </Route>
+
+        {/* Banner de Consentimento de Cookies Global */}
+        <CookieBanner />
       </RouterProvider>
     </ResponsiveWrapper>
   );

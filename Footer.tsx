@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from './router';
 
 export const Footer: React.FC = () => {
   const logoUrl = "/logo-final.jpg";
@@ -29,20 +30,20 @@ export const Footer: React.FC = () => {
         <div>
           <h4 className="text-white font-bold mb-6 text-sm uppercase tracking-wider">Institucional</h4>
           <ul className="space-y-4 text-slate-400 text-sm font-medium">
-            <li><a href="#" className="hover:text-primary transition-colors">Sobre a Empresa</a></li>
-            <li><a href="#" className="hover:text-primary transition-colors">Trabalhe Conosco</a></li>
-            <li><a href="#" className="hover:text-primary transition-colors">Blog de Segurança</a></li>
-            <li><a href="#" className="hover:text-primary transition-colors">Política de Privacidade</a></li>
+            <li><Link to="/politica-privacidade" className="hover:text-primary transition-colors block">Política de Privacidade</Link></li>
+            <li><Link to="/politica-cookies" className="hover:text-primary transition-colors block">Política de Cookies</Link></li>
+            <li><Link to="/termos-uso" className="hover:text-primary transition-colors block">Termos de Uso</Link></li>
+            <li><Link to="/politica-rastreamento" className="hover:text-primary transition-colors block">Política de Rastreamento</Link></li>
           </ul>
         </div>
 
         <div>
           <h4 className="text-white font-bold mb-6 text-sm uppercase tracking-wider">Nossas Soluções</h4>
           <ul className="space-y-4 text-slate-400 text-sm font-medium">
-            <li><a href="#" className="hover:text-primary transition-colors">Para Pessoa Física</a></li>
-            <li><a href="#" className="hover:text-primary transition-colors">Para Frotas Comerciais</a></li>
-            <li><a href="#" className="hover:text-primary transition-colors">Telemetria Avançada</a></li>
-            <li><a href="#" className="hover:text-primary transition-colors">Recuperação de Carga</a></li>
+            <li><a href="/#funcionalidades" className="hover:text-primary transition-colors">Para Pessoa Física</a></li>
+            <li><a href="/#funcionalidades" className="hover:text-primary transition-colors">Para Frotas Comerciais</a></li>
+            <li><a href="/#funcionalidades" className="hover:text-primary transition-colors">Telemetria Avançada</a></li>
+            <li><Link to="/contato" className="hover:text-primary transition-colors block">Página de Contato</Link></li>
           </ul>
         </div>
 

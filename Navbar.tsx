@@ -37,7 +37,7 @@ export const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg py-2' : 'bg-transparent py-4'}`}>
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-        <div className="flex items-center gap-3">
+        <Link to="/" className="flex items-center gap-3 hover:opacity-90 transition-opacity">
           <div className="h-14 w-auto bg-white rounded-xl flex items-center justify-center p-1 shadow-md border border-slate-100 overflow-hidden">
             <img
               src={logoUrl}
@@ -53,13 +53,14 @@ export const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
               Monitoramento Inteligente
             </span>
           </div>
-        </div>
+        </Link>
 
         {/* Desktop Links */}
         <div className="hidden md:flex items-center gap-8">
-          <a href="#" className={`font-bold text-sm hover:text-primary transition-colors ${isScrolled ? 'text-secondary' : 'text-white'}`}>Home</a>
-          <a href="#" className={`font-bold text-sm hover:text-primary transition-colors ${isScrolled ? 'text-secondary' : 'text-white'}`}>Funcionalidades</a>
-          <a href="#" className={`font-bold text-sm hover:text-primary transition-colors ${isScrolled ? 'text-secondary' : 'text-white'}`}>Frota</a>
+          <Link to="/" className={`font-bold text-sm hover:text-primary transition-colors ${isScrolled ? 'text-secondary' : 'text-white'}`}>Home</Link>
+          <a href="/#funcionalidades" className={`font-bold text-sm hover:text-primary transition-colors ${isScrolled ? 'text-secondary' : 'text-white'}`}>Funcionalidades</a>
+          <a href="/#frota" className={`font-bold text-sm hover:text-primary transition-colors ${isScrolled ? 'text-secondary' : 'text-white'}`}>Frota</a>
+          <Link to="/contato" className={`font-bold text-sm hover:text-primary transition-colors ${isScrolled ? 'text-secondary' : 'text-white'}`}>Contato</Link>
 
           <button
             onClick={handlePlanosClick}
@@ -103,9 +104,10 @@ export const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
       {/* Mobile Menu Overlay */}
       {isOpen && (
         <div className="md:hidden absolute top-full left-0 right-0 bg-white shadow-2xl p-6 flex flex-col gap-4 border-t animate-fade-in-down">
-          <a href="#" className="font-bold text-secondary py-2 border-b border-slate-50">Home</a>
-          <a href="#" className="font-bold text-secondary py-2 border-b border-slate-50">Funcionalidades</a>
-          <a href="#" className="font-bold text-secondary py-2 border-b border-slate-50">Frota</a>
+          <Link to="/" onClick={() => setIsOpen(false)} className="font-bold text-secondary py-2 border-b border-slate-50">Home</Link>
+          <a href="/#funcionalidades" onClick={() => setIsOpen(false)} className="font-bold text-secondary py-2 border-b border-slate-50">Funcionalidades</a>
+          <a href="/#frota" onClick={() => setIsOpen(false)} className="font-bold text-secondary py-2 border-b border-slate-50">Frota</a>
+          <Link to="/contato" onClick={() => setIsOpen(false)} className="font-bold text-secondary py-2 border-b border-slate-50">Contato</Link>
 
           <button
             onClick={handlePlanosClick}

@@ -10,7 +10,7 @@ const vehicles = [
 
 export const VehicleGrid: React.FC = () => {
   return (
-    <section className="py-24 px-6 bg-slate-50">
+    <section id="frota" className="py-24 px-6 bg-slate-50">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <div className="max-w-xl">

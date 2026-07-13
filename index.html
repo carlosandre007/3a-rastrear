@@ -13,6 +13,35 @@
     <meta name="apple-mobile-web-app-title" content="3A RASTREAR" />
     <link rel="apple-touch-icon" href="/logo-final.jpg" />
 
+    <!-- Google Consent Mode v2 - Configuração Padrão (LGPD/GDPR) -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        
+        // Define o estado inicial de consentimento como NEGADO (denied) antes de carregar o GTM/GA4
+        gtag('consent', 'default', {
+            'ad_storage': 'denied',
+            'ad_user_data': 'denied',
+            'ad_personalization': 'denied',
+            'analytics_storage': 'denied',
+            'wait_for_update': 500
+        });
+        
+        // Configurações extras de privacidade
+        gtag('set', 'ads_data_redaction', true);
+    </script>
+
+    <!-- Estrutura Preparada para o Google Tag / GTM (Descomentar e inserir o ID real da 3A RASTREAR) -->
+    <!-- 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX', { 'anonymize_ip': true });
+    </script>
+    -->
+
 
     <!-- Fonts & Icons -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"

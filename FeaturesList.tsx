@@ -12,7 +12,7 @@ const features = [
 
 export const FeaturesList: React.FC = () => {
   return (
-    <section className="py-24 px-6 bg-white">
+    <section id="funcionalidades" className="py-24 px-6 bg-white">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 items-center">
         <div className="flex-1 order-2 lg:order-1">
           <div className="mb-10">
