@@ -43,7 +43,7 @@ export const Footer: React.FC = () => {
             <li><a href="/#funcionalidades" className="hover:text-primary transition-colors">Para Pessoa Física</a></li>
             <li><a href="/#funcionalidades" className="hover:text-primary transition-colors">Para Frotas Comerciais</a></li>
             <li><a href="/#funcionalidades" className="hover:text-primary transition-colors">Telemetria Avançada</a></li>
-            <li><Link to="/contato" className="hover:text-primary transition-colors block">Página de Contato</Link></li>
+            <li><a href="/#contato" className="hover:text-primary transition-colors block">Fale Conosco (WhatsApp)</a></li>
           </ul>
         </div>
 

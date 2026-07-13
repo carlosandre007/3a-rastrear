@@ -115,7 +115,7 @@ export const PoliticaPrivacidade: React.FC = () => {
                 7. Fale Conosco
               </h2>
               <p>
-                Para exercer seus direitos ou tirar dúvidas sobre como tratamos seus dados pessoais, você pode entrar em contato conosco através do e-mail de atendimento <a href="mailto:contato@3arastrear.com.br" className="text-primary hover:underline">contato@3arastrear.com.br</a> ou através de nossa <a href="/contato" className="text-primary hover:underline">Página de Contato</a>.
+                Para exercer seus direitos ou tirar dúvidas sobre como tratamos seus dados pessoais, você pode entrar em contato conosco através do e-mail de atendimento <a href="mailto:contato@3arastrear.com.br" className="text-primary hover:underline">contato@3arastrear.com.br</a> ou em nossa seção <a href="/#contato" className="text-primary hover:underline">Fale Conosco</a>.
               </p>
             </section>
           </div>

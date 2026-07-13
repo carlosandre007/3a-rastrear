@@ -60,7 +60,7 @@ export const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
           <Link to="/" className={`font-bold text-sm hover:text-primary transition-colors ${isScrolled ? 'text-secondary' : 'text-white'}`}>Home</Link>
           <a href="/#funcionalidades" className={`font-bold text-sm hover:text-primary transition-colors ${isScrolled ? 'text-secondary' : 'text-white'}`}>Funcionalidades</a>
           <a href="/#frota" className={`font-bold text-sm hover:text-primary transition-colors ${isScrolled ? 'text-secondary' : 'text-white'}`}>Frota</a>
-          <Link to="/contato" className={`font-bold text-sm hover:text-primary transition-colors ${isScrolled ? 'text-secondary' : 'text-white'}`}>Contato</Link>
+          <a href="/#contato" className={`font-bold text-sm hover:text-primary transition-colors ${isScrolled ? 'text-secondary' : 'text-white'}`}>Contato</a>
 
           <button
             onClick={handlePlanosClick}
@@ -107,7 +107,7 @@ export const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
           <Link to="/" onClick={() => setIsOpen(false)} className="font-bold text-secondary py-2 border-b border-slate-50">Home</Link>
           <a href="/#funcionalidades" onClick={() => setIsOpen(false)} className="font-bold text-secondary py-2 border-b border-slate-50">Funcionalidades</a>
           <a href="/#frota" onClick={() => setIsOpen(false)} className="font-bold text-secondary py-2 border-b border-slate-50">Frota</a>
-          <Link to="/contato" onClick={() => setIsOpen(false)} className="font-bold text-secondary py-2 border-b border-slate-50">Contato</Link>
+          <a href="/#contato" onClick={() => setIsOpen(false)} className="font-bold text-secondary py-2 border-b border-slate-50">Contato</a>
 
           <button
             onClick={handlePlanosClick}
