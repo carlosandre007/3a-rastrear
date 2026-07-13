@@ -1,0 +1,39 @@
+/* 3A RASTREAR CSS */
+
+.leaflet-container {
+  background: #03060a !important;
+  width: 100%;
+  height: 100%;
+}
+
+.dark-leaflet .leaflet-tile-container img {
+  filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%) !important;
+}
+
+.dark-leaflet .leaflet-control-attribution {
+  background-color: rgba(10, 17, 27, 0.8) !important;
+  color: #64748b !important;
+}
+
+.dark-leaflet .leaflet-control-attribution a {
+  color: #38bdf8 !important;
+}
+
+.dark-leaflet .leaflet-bar a {
+  background-color: #0a111b !important;
+  color: #f8fafc !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.dark-leaflet .leaflet-bar a:hover {
+  background-color: #1e293b !important;
+  color: #fbbf24 !important;
+}
+
+@media (max-width: 767px) {
+  .leaflet-container {
+    height: 300px !important;
+  }
+}
+
+

@@ -1,0 +1,49 @@
+/* Tema premium dark para 3A Rastrear */
+
+:root {
+  /* Paleta dark premium (HSL) */
+  --color-primary: hsl(210, 30%, 20%);
+  --color-secondary: hsl(210, 30%, 12%);
+  --color-accent: hsl(160, 60%, 45%);
+  --color-surface: hsl(210, 30%, 15%);
+  --color-surface-dark: hsl(210, 30%, 10%);
+  --color-text-primary: hsl(0, 0%, 90%);
+  --color-text-secondary: hsl(0, 0%, 70%);
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--color-primary);
+  color: var(--color-text-primary);
+  margin: 0;
+  min-height: 100vh;
+}
+
+/* Glassmorphism utility */
+.glass {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Buttons */
+button {
+  background: var(--color-accent);
+  color: var(--color-text-primary);
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+button:hover {
+  background: hsl(160, 60%, 50%);
+}
+
+/* Responsividade base */
+@media (max-width: 768px) {
+  .container {
+    padding: 0.8rem;
+  }
+}
